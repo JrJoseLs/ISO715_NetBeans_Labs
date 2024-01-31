@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Desarrolle una pagina html que capture los datos basicos de un cliente (id, nombre, categoria y direccion), los pase 
+por parametro a un servlet y este cree una instancia de la clase cliente y persista dichos datos en un archivo de texto del 
+lado servidor.
+-->
+
+<html>
+    <head>
+        <title>Cliente Datos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Ingresar datos</div>
+        <br/>
+        <form name="frm1" action="Cliente" method="post">
+ 
+            <table>
+                <tr>
+                    <td>Id</td>
+                    <td><input type ="text" name="txtId"/></td>
+                </tr>
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type ="text" name="txtNombre"/></td>
+                </tr>
+                <tr>
+                    <td>Categoria</td>
+                    <td><input type ="text" name="txtCategoria"/></td>
+                </tr>
+                <tr>
+                    <td>Direccion</td>
+                    <td><input type ="text" name="txtDireccion"/></td>
+                </tr>
+                <input type="submit" value ="Guardar">
+            </table>
+            
+         </form>
+    </body>
+</html>

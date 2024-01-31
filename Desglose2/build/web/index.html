@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8"/>
+</head>
+<body>
+<script type="text/javascript">
+    //declaración de variables
+    var b200,b100,b50,b10,b5,m2,m1,c50,c20,c10,c5,c2,c1;
+    //lectura de entrada. Capital de dinero enPesos.
+    E=prompt('Dame la cantidad de dinero: ','DOP');
+    //proceso
+    if(E>=200){
+        b200=(E-(E%200))/200; //obtenemos el cociente exacto, billetes de 200DOP.
+        //document.write(E,'DOP ',E/200,' cociente </br>');
+        E=E%200;
+        document.write(b200,' billetes de 200DOP </br>');
+        document.write(E,' Resto </br>');
+    }
+    if(E>=100){
+        b100=(E-(E%100))/100; //obtenemos el cociente exacto, billetes de 100DOP.
+        //document.write(E,'DOP ',E/100,' cociente </br>');
+        E=E%100;
+        document.write(b100,' billetes de 100DOP </br>');
+        document.write(E,' Resto </br>');
+    }
+    if(E>=50){
+        b50=(E-(E%50))/50; //obtenemos el cociente exacto, billetes de 50DOP.
+        //document.write(E,'DOP ',E/50,' cociente </br>');
+        E=E%50;
+        document.write(b50,' billetes de 50DOP </br>');
+        document.write(E,' Resto </br>');
+    }
+    if(E>=20){
+        b20=(E-(E%20))/20; //obtenemos el cociente exacto, billetes de 20DOP.
+        //document.write(E,'DOP ',E/20,' cociente </br>');
+        E=E%20;
+        document.write(b20,' billetes de 20DOP </br>');
+        document.write(E,' Resto </br>');
+    }
+    if(E>=10){
+        b10=(E-(E%10))/10; //obtenemos el cociente exacto, billetes de 10DOP.
+        //document.write(E,'DOP ',E/10,' cociente </br>');
+        E=E%10;
+        document.write(b10,' billetes de 10DOP </br>');
+        document.write(E,' Resto </br>');
+    }
+    if(E>=5){
+        b5=(E-(E%5))/5; //obtenemos el cociente exacto, billetes de 5DOP.
+        //document.write(E,'DOP ',E/5,' cociente </br>');
+        E=E%5;
+        document.write(b5,' billetes de 5DOP </br>');
+        document.write(E,' Resto </br>');
+    }
+    if(E>=2){
+        m2=(E-(E%2))/2; //obtenemos el cociente exacto, monedas de 2DOP.
+        //document.write(E,'DOP ',E/2,' cociente </br>');
+        E=E%2;
+        document.write(m2,' monedas de 2DOP </br>');
+        document.write(E,' Resto </br>');
+    }
+    if(E>=1){
+        m1=(E-(E%1))/1; //obtenemos el cociente exacto, monedas de 1DOP.
+        //document.write(E,'DOP ',E/1,' cociente </br>');
+        E=E%1;
+        document.write(m1,' monedas de 1DOP </br>');
+        document.write(E,' Resto </br>');
+    }
+    if(E>=0.49){
+        c50=(E-(E%0.50))/0.50; //obtenemos el cociente exacto, monedas de 50 cent. de DOP.
+        //document.write(E,'DOP ',E/0.50,' cociente </br>');
+        E=E%0.50;
+        document.write(c50,' monedas de 50 centimos de DOP </br>');
+        document.write(E,' Resto </br>');
+    }
+    if(E>=0.19){
+        c20=(E-(E%0.20))/0.20; //obtenemos el cociente exacto, monedas de 20 cent. de DOP.
+        //document.write(E,'DOP ',E/0.20,' cociente </br>');
+        E=E%0.20;
+        document.write(c20,' monedas de 20 centimos de DOP </br>');
+        document.write(E,' Resto </br>');
+    }
+    if(E>=0.09){
+        c10=(E-(E%0.10))/0.10; //obtenemos el cociente exacto, monedas de 10 cent. de DOP.
+        //document.write(E,'DOP ',E/0.10,' cociente </br>');
+        E=E%0.10;
+        document.write(c10,' monedas de 10 centimos de DOP </br>');
+        document.write(E,' Resto </br>');
+    }
+    if(E>=0.049){
+        E=0.05;
+        c5=(E-(E%0.05))/0.05; //obtenemos el cociente exacto, monedas de 5 cent. de DOP.
+        //document.write(E,'DOP ',E/0.05,' cociente </br>');
+        E=E%0.05;
+        document.write(c5,' monedas de 5 centimos de DOP </br>');
+        document.write(E,' Resto </br>');
+    }
+    if(E>=0.019){
+        E=0.02;
+        c2=(E-(E%0.02))/0.02; //obtenemos el cociente exacto, monedas de 2 cent. de DOP.
+        //document.write(E,'DOP ',E/0.02,' cociente </br>');
+        E=E%0.02;
+        document.write(c2,' monedas de 2 centimos de DOP </br>');
+        document.write(E,' Resto </br>');
+    }
+    if(E>=0.009){
+        E=0.01;
+        c1=(E-(E%0.01))/0.01; //obtenemos el cociente exacto, monedas de 1 cent. de DOP.
+        //document.write(E,'DOP ',E/0.01,' cociente </br>');
+        E=E%0.01;
+        document.write(c1,' monedas de 1 centimos de DOP </br>');
+        document.write(E,' Resto </br>');
+    }
+</script>
+</body>
+</html>
